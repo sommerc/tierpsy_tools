@@ -1,0 +1,24 @@
+[project]
+name = "tierpsy-tools"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Christoph Sommer", email = "christoph.sommer@ist.ac.at" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "h5py>=3.16.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.3",
+    "opencv-python>=4.13.0.92",
+    "pandas>=3.0.1",
+    "rich>=14.3.3",
+]
+
+[project.scripts]
+get_speed = "tierpsy_tools:get_speed"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
